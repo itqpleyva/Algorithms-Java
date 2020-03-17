@@ -86,7 +86,7 @@ public class AlgorithmsMain {
 		System.out.println(neg);
 		System.out.println(cer);
 		
-		System.out.println("Algorithm to print a stair of # given e number of steps");//steps = 6;
+		System.out.println("Algorithm to print a stair of # given a number of steps");//steps = 6;
 
 		int n = 0;
 		int m = 0;
