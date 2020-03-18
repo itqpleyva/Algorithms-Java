@@ -9,6 +9,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.swing.SingleSelectionModel;
+
 public class AlgorithmsMain {
 
 	public static void main(String[] args) {
@@ -71,11 +73,11 @@ public class AlgorithmsMain {
 				"2- number of negative elements/array.size();\r\n" + 
 				"3- number of zeros elements/array.size();");
 
-		int[] arr = {-1, -2, 0, 4, 5};
+		int[] arrq = {-1, -2, 0, 4, 5};
 		
 		List<Integer> list = new ArrayList<Integer>();
 		
-		for(int number: arr){
+		for(int number: arrq){
 			
 			list.add(number);
 		}
@@ -138,15 +140,124 @@ public class AlgorithmsMain {
 		System.out.println(cantidad);
 		
 		
+		System.out.println("Algorithm breaking records");
+		
+		int[] scores= {10,34,11,23,4,56,78,3};
+		
+		List<Integer> listascore = new ArrayList<Integer>();
+
+		for(Integer valor: scores){
+			
+			listascore.add(valor);
+		}
+		
+		int tempMenor = 0;
+		int tempMayor = 0;		
+		int countMayorBreak =  0;
+		int countMinorBreak = 0;
+		
+		for (int i = 0; i < listascore.size(); i++) {
+			
+			if (i==0) {
+				tempMayor = listascore.get(i);
+				tempMenor = listascore.get(i);
+			}
+			else {
+	
+				if (listascore.get(i) > tempMayor) {
+					
+					tempMayor = listascore.get(i);
+					countMayorBreak++;
+					//System.out.println("El mayor: "+tempMayor);
+				}
+				if (listascore.get(i) < tempMenor) {
+					
+					countMinorBreak++;
+					tempMenor = listascore.get(i);
+					//System.out.println("El menor: "+tempMenor);
+				}
+				
+			}
+			
+		}
+
+		int[] rec = {countMayorBreak,countMinorBreak};
+		System.out.println(rec[0]+" "+rec[1]);
+
+		System.out.println("Pairs sum divisible by 5");
+
+		
+		int cont = 0;
+		int tempNumber = 0;
+		int[] numbers= {100,100,100,100,55,32};
 		
 		
+		List<Integer> listaNum= new ArrayList<Integer>();
+
+		for(Integer valor: numbers){
+			
+			listaNum.add(valor);
+		}
 		
+		for (int i = 0; i < listaNum.size(); i++) {
+			tempNumber = listaNum.get(i);
+			
+			for (int j = 0; j < listaNum.size(); j++) {
+				if (i<j) {
+					
+					int calc = tempNumber + listaNum.get(j);
+					if ((calc % 3) == 0) {
+						
+						cont++;
+					}
+					
+				}
 		
+			}
+		}
 		
+		System.out.println(cont);
 		
+		System.out.println("uuuuuuuuuuuuuuuuuuuuuuuuu");
+
+		List<List<Integer>> arr = new ArrayList<List<Integer>>();
+	
+		 for(int i =0; i<= 4; i++){
+		            arr.add(new ArrayList<Integer>());
+		        }
+		//-11,2,3
+		//4,5,6
+		//7,8,-12
 		
+   
+
 		
+        arr.get(0).add(11);
+        arr.get(0).add(2);
+        arr.get(0).add(4);
+ 
+        arr.get(1).add(4);
+        arr.get(1).add(5);
+        arr.get(1).add(6);
+        
+        arr.get(2).add(10);
+        arr.get(2).add(8);
+        arr.get(2).add(-12);
 		
-	}
+        	int len = arr.get(1).size();
+        
+        int sumFirstD = 0;
+        int sumSecondD = 0;
+        int contador = 0;
+        
+        for (int i = 0; i < len; i++) 
+        { 
+        	sumFirstD += arr.get(i).get(i); 
+        	sumSecondD += arr.get(i).get(len-i-1); 
+        } 
+        System.out.println(Math.abs(sumFirstD-sumSecondD));
+    }
+
+	
 
 }
