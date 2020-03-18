@@ -98,13 +98,13 @@ public class AlgorithmsMain {
 		System.out.println(cer);
 
 //Algorithm to print a stair of # given a number of steps
-output:
+output:"
      #
     ##
    ###
   ####
  #####
-######
+######"
 
 		System.out.println("Algorithm to print a stair of # given e number of steps");//steps = 6;
 
