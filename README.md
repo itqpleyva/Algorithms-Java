@@ -10,7 +10,9 @@ import java.util.List;
 public class AlgorithmsMain {
 
 	public static void main(String[] args) {
-		
+	
+	//Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements
+	
 		System.out.println("Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements");
 		int[] arrs = {1,2,3,4,5};
 		
@@ -64,6 +66,11 @@ public class AlgorithmsMain {
 		
 			System.out.println(sum +" "+ sum);
 		}
+//algorithm to print given array, three values:
+				1- number of positive elements/array.size()
+				2- number of negative elements/array.size()
+				3- number of zeros elements/array.size()
+				
 		System.out.println("algorithm to print given array, three values:\r\n" + 
 				"1- number of positive elements/array.size();\r\n" + 
 				"2- number of negative elements/array.size();\r\n" + 
@@ -89,7 +96,10 @@ public class AlgorithmsMain {
 		System.out.println(pos);
 		System.out.println(neg);
 		System.out.println(cer);
-		
+
+//Algorithm to print a stair of # given a number of steps
+
+
 		System.out.println("Algorithm to print a stair of # given e number of steps");//steps = 6;
 
 		int n = 0;
