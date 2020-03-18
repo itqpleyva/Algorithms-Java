@@ -1,7 +1,13 @@
 package Algorithms;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class AlgorithmsMain {
 
@@ -109,6 +115,38 @@ public class AlgorithmsMain {
 			cha = cha.concat("#");
 		}
 
+		
+		System.out.println("Algorithm cake candle");//print the amount of mayor number in arra
+		
+		int[] arra = {1111111111,1111111111,1111111111};
+		
+
+		List<Integer> lista = new ArrayList<Integer>();
+		
+		for(Integer valor: arra){
+			
+			lista.add(valor);
+		}
+		System.out.println(lista);
+		
+		Integer biger = lista.stream().max(Integer::compare).get();
+
+	
+		int cantidad =  Collections.frequency(lista, biger);
+
+				
+		System.out.println(cantidad);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
