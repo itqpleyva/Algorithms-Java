@@ -1,16 +1,8 @@
 package Algorithms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
-import java.util.stream.Collectors;
-
-import javax.swing.SingleSelectionModel;
-
 public class AlgorithmsMain {
 
 	public static void main(String[] args) {
@@ -185,8 +177,7 @@ public class AlgorithmsMain {
 		System.out.println(rec[0]+" "+rec[1]);
 
 		System.out.println("Pairs sum divisible by 5");
-
-		
+	
 		int cont = 0;
 		int tempNumber = 0;
 		int[] numbers= {100,100,100,100,55,32};
@@ -218,19 +209,13 @@ public class AlgorithmsMain {
 		
 		System.out.println(cont);
 		
-		System.out.println("uuuuuuuuuuuuuuuuuuuuuuuuu");
+		System.out.println("Absolute Diagonals Difference in a Matrix");
 
 		List<List<Integer>> arr = new ArrayList<List<Integer>>();
 	
 		 for(int i =0; i<= 4; i++){
 		            arr.add(new ArrayList<Integer>());
 		        }
-		//-11,2,3
-		//4,5,6
-		//7,8,-12
-		
-   
-
 		
         arr.get(0).add(11);
         arr.get(0).add(2);
