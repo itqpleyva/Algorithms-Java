@@ -99,7 +99,6 @@ public class AlgorithmsMain {
 
 //Algorithm to print a stair of # given a number of steps
 
-
 		System.out.println("Algorithm to print a stair of # given e number of steps");//steps = 6;
 
 		int n = 0;
