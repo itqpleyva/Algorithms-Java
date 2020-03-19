@@ -6,7 +6,9 @@ import java.util.List;
 public class AlgorithmsMain {
 
 	public static void main(String[] args) {
-		
+	
+//Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements"		
+
 		System.out.println("Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements");
 		int[] arrs = {1,2,3,4,5};
 		
@@ -86,6 +88,8 @@ public class AlgorithmsMain {
 		System.out.println(neg);
 		System.out.println(cer);
 		
+//Algorithm to print a stair of # given a number of steps"
+
 		System.out.println("Algorithm to print a stair of # given a number of steps");//steps = 6;
 
 		int n = 0;
@@ -109,7 +113,8 @@ public class AlgorithmsMain {
 			cha = cha.concat("#");
 		}
 
-		
+//Algorithm cake candle	
+
 		System.out.println("Algorithm cake candle");//print the amount of mayor number in arra
 		
 		int[] arra = {1111111111,1111111111,1111111111};
@@ -131,7 +136,8 @@ public class AlgorithmsMain {
 				
 		System.out.println(cantidad);
 		
-		
+//Algorithm breaking records
+
 		System.out.println("Algorithm breaking records");
 		
 		int[] scores= {10,34,11,23,4,56,78,3};
@@ -210,6 +216,7 @@ public class AlgorithmsMain {
 		}
 		
 		System.out.println(cont);
+		
 //Absolute diagonal difference in matrix
 
 		System.out.println("Absolute Diagonals Difference in a Matrix");
@@ -245,7 +252,5 @@ public class AlgorithmsMain {
         } 
         System.out.println(Math.abs(sumFirstD-sumSecondD));
     }
-
-	
 
 }
