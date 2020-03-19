@@ -1,18 +1,12 @@
-# Algorithms-Java
-Repo to share some Java Algorithms
-
-
 package Algorithms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-
 public class AlgorithmsMain {
 
 	public static void main(String[] args) {
-	
-	//Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements
-	
+		
 		System.out.println("Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements");
 		int[] arrs = {1,2,3,4,5};
 		
@@ -66,21 +60,16 @@ public class AlgorithmsMain {
 		
 			System.out.println(sum +" "+ sum);
 		}
-//algorithm to print given array, three values:
-				1- number of positive elements/array.size()
-				2- number of negative elements/array.size()
-				3- number of zeros elements/array.size()
-				
 		System.out.println("algorithm to print given array, three values:\r\n" + 
 				"1- number of positive elements/array.size();\r\n" + 
 				"2- number of negative elements/array.size();\r\n" + 
 				"3- number of zeros elements/array.size();");
 
-		int[] arr = {-1, -2, 0, 4, 5};
+		int[] arrq = {-1, -2, 0, 4, 5};
 		
 		List<Integer> list = new ArrayList<Integer>();
 		
-		for(int number: arr){
+		for(int number: arrq){
 			
 			list.add(number);
 		}
@@ -96,10 +85,8 @@ public class AlgorithmsMain {
 		System.out.println(pos);
 		System.out.println(neg);
 		System.out.println(cer);
-
-//Algorithm to print a stair of # given a number of steps
-
-		System.out.println("Algorithm to print a stair of # given e number of steps");//steps = 6;
+		
+		System.out.println("Algorithm to print a stair of # given a number of steps");//steps = 6;
 
 		int n = 0;
 		int m = 0;
@@ -122,6 +109,143 @@ public class AlgorithmsMain {
 			cha = cha.concat("#");
 		}
 
-	}
+		
+		System.out.println("Algorithm cake candle");//print the amount of mayor number in arra
+		
+		int[] arra = {1111111111,1111111111,1111111111};
+		
+
+		List<Integer> lista = new ArrayList<Integer>();
+		
+		for(Integer valor: arra){
+			
+			lista.add(valor);
+		}
+		System.out.println(lista);
+		
+		Integer biger = lista.stream().max(Integer::compare).get();
+
+	
+		int cantidad =  Collections.frequency(lista, biger);
+
+				
+		System.out.println(cantidad);
+		
+		
+		System.out.println("Algorithm breaking records");
+		
+		int[] scores= {10,34,11,23,4,56,78,3};
+		
+		List<Integer> listascore = new ArrayList<Integer>();
+
+		for(Integer valor: scores){
+			
+			listascore.add(valor);
+		}
+		
+		int tempMenor = 0;
+		int tempMayor = 0;		
+		int countMayorBreak =  0;
+		int countMinorBreak = 0;
+		
+		for (int i = 0; i < listascore.size(); i++) {
+			
+			if (i==0) {
+				tempMayor = listascore.get(i);
+				tempMenor = listascore.get(i);
+			}
+			else {
+	
+				if (listascore.get(i) > tempMayor) {
+					
+					tempMayor = listascore.get(i);
+					countMayorBreak++;
+					//System.out.println("El mayor: "+tempMayor);
+				}
+				if (listascore.get(i) < tempMenor) {
+					
+					countMinorBreak++;
+					tempMenor = listascore.get(i);
+					//System.out.println("El menor: "+tempMenor);
+				}
+				
+			}
+			
+		}
+
+		int[] rec = {countMayorBreak,countMinorBreak};
+		System.out.println(rec[0]+" "+rec[1]);
+		
+//Pairs sum divisible by 5 in list
+
+		System.out.println("Pairs sum divisible by 5");
+	
+		int cont = 0;
+		int tempNumber = 0;
+		int[] numbers= {100,100,100,100,55,32};
+		
+		
+		List<Integer> listaNum= new ArrayList<Integer>();
+
+		for(Integer valor: numbers){
+			
+			listaNum.add(valor);
+		}
+		
+		for (int i = 0; i < listaNum.size(); i++) {
+			tempNumber = listaNum.get(i);
+			
+			for (int j = 0; j < listaNum.size(); j++) {
+				if (i<j) {
+					
+					int calc = tempNumber + listaNum.get(j);
+					if ((calc % 3) == 0) {
+						
+						cont++;
+					}
+					
+				}
+		
+			}
+		}
+		
+		System.out.println(cont);
+//Absolute diagonal difference in matrix
+
+		System.out.println("Absolute Diagonals Difference in a Matrix");
+
+		List<List<Integer>> arr = new ArrayList<List<Integer>>();
+	
+		 for(int i =0; i<= 4; i++){
+		            arr.add(new ArrayList<Integer>());
+		        }
+		
+        arr.get(0).add(11);
+        arr.get(0).add(2);
+        arr.get(0).add(4);
+ 
+        arr.get(1).add(4);
+        arr.get(1).add(5);
+        arr.get(1).add(6);
+        
+        arr.get(2).add(10);
+        arr.get(2).add(8);
+        arr.get(2).add(-12);
+		
+        	int len = arr.get(1).size();
+        
+        int sumFirstD = 0;
+        int sumSecondD = 0;
+        int contador = 0;
+        
+        for (int i = 0; i < len; i++) 
+        { 
+        	sumFirstD += arr.get(i).get(i); 
+        	sumSecondD += arr.get(i).get(len-i-1); 
+        } 
+        System.out.println(Math.abs(sumFirstD-sumSecondD));
+    }
+
+	
 
 }
