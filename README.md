@@ -389,7 +389,7 @@ public class AlgorithmsMain {
 				if (i<j) {
 					
 					int calc = tempNumber + listaNum.get(j);
-					if ((calc % 3) == 0) {
+					if ((calc % 5) == 0) {
 						
 						cont++;
 					}
