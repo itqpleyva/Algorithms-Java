@@ -3,7 +3,7 @@ public class AlgorithmsMain {
 
 	public static void main(String[] args) {
 		
-		// If integer is palindrome solution 1
+// If integer is palindrome solution 1
 		
 		List<Integer> kl = new ArrayList<Integer>();
 		int cv = 121;
@@ -23,7 +23,7 @@ public class AlgorithmsMain {
 		System.out.println(cv == result?"Palindrome":"No palindrome");
 		
 		
-		// If integer is palindrome solution 2
+// If integer is palindrome solution 2
 		
 		Integer vb = Integer.valueOf(cv);
 
@@ -46,7 +46,7 @@ public class AlgorithmsMain {
 			
 		}
 		
-		//Sum of inverted linked list
+//Sum of inverted linked list
 			
 		LinkedList<Integer> linkedList1 = new LinkedList<Integer>(Arrays.asList(2,4));
 		LinkedList<Integer> linkedList2 = new LinkedList<Integer>(Arrays.asList(5,6,4));
@@ -71,7 +71,7 @@ public class AlgorithmsMain {
 		}
 		System.out.println(Integer.parseInt(number1)+Integer.parseInt(number2));
 		
-		//if chains of characters is valid
+//if chains of characters is valid
 		
 		String ss = "({(})";
 		Map<Character,Character> characterMap = new HashMap<Character,Character>();
@@ -83,7 +83,8 @@ public class AlgorithmsMain {
 	    for (int i = 0; i < ss.length(); i++) {
 	        char c = ss.charAt(i);
 
-	        // If the current character is a closing bracket.
+			// If the current character is a closing bracket.
+
 	        if (characterMap.containsKey(c)) {
 
 	          // Get the top element of the stack. If the stack is empty, set a dummy value of '#'
@@ -101,7 +102,7 @@ public class AlgorithmsMain {
 	    System.out.println(pila.isEmpty());
 		
 		
-		//get the position of the two integers (int a + int b = int expected
+//get the position of the two integers (int a + int b = int expected
 		int[] arrayTest = {2,3,7,4,8};
 		Map<Integer,Integer> map = new HashMap<Integer,Integer>();
 		
@@ -120,7 +121,7 @@ public class AlgorithmsMain {
 		}		
 		System.out.println(arrayToreturn[0]+"---"+arrayToreturn[1]);
 
-		//FizzBuzz
+//FizzBuzz
 		
 		for (int i = 0; i <= 100; i++) {
 			if(i%3==0 && i%5==0) {
@@ -136,7 +137,8 @@ public class AlgorithmsMain {
 				System.out.println(i);
 			
 		}
-		//Ana and Carlos bill algorithm 
+//Ana and Carlos bill algorithm 
+
 		int nC= 1;
 		
 		Integer[] bill1 = {3,10,2,9};
@@ -159,7 +161,7 @@ public class AlgorithmsMain {
 		else
 		System.out.println("Anna debe : "+realDebe);
 		
-		//Valleys walk algorithm
+//Valleys walk algorithm
 		
 		    String s = "DDUUUUDDDUDU";
 		    int level= 0;
@@ -184,9 +186,9 @@ public class AlgorithmsMain {
 				}
 				System.out.println("Number of valleys = "+ valleys);
 				
-			//"Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements"
+//"Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements"
         
-		System.out.println("Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements");
+	System.out.println("Algorithm to print given one array of 5 elements the mayor sum of 4 elements and the minor sum of 4 elements");
 		int[] arrs = {1,2,3,4,5};
 		
 		int cont1=0;
@@ -240,10 +242,10 @@ public class AlgorithmsMain {
 			System.out.println(sum +" "+ sum);
 		}
 		
-		//"algorithm to print given array, three values:\r\n" + 
-		//"1- number of positive elements/array.size();\r\n" + 
-		//"2- number of negative elements/array.size();\r\n" + 
-		//"3- number of zeros elements/array.size();"
+//"algorithm to print given array, three values:\r\n" + 
+//"1- number of positive elements/array.size();\r\n" + 
+//"2- number of negative elements/array.size();\r\n" + 
+//"3- number of zeros elements/array.size();"
 		
 		System.out.println("algorithm to print given array, three values:\r\n" + 
 				"1- number of positive elements/array.size();\r\n" + 
@@ -271,7 +273,7 @@ public class AlgorithmsMain {
 		System.out.println(neg);
 		System.out.println(cer);
 		
-		//"Algorithm to print a stair of # given a number of steps"
+//"Algorithm to print a stair of # given a number of steps"
 		
 		System.out.println("Algorithm to print a stair of # given a number of steps");//steps = 6;
 
@@ -296,7 +298,7 @@ public class AlgorithmsMain {
 			cha = cha.concat("#");
 		}
 
-		//"Algorithm cake candle"
+//"Algorithm cake candle"
 		
 		System.out.println("Algorithm cake candle");//print the amount of mayor number in arra
 		
@@ -309,7 +311,6 @@ public class AlgorithmsMain {
 			
 			lista.add(valor);
 		}
-		System.out.println(lista);
 		
 		Integer biger = lista.stream().max(Integer::compare).get();
 
@@ -319,7 +320,7 @@ public class AlgorithmsMain {
 				
 		System.out.println(cantidad);
 		
-		//"Algorithm breaking records"
+//"Algorithm breaking records"
 		
 		System.out.println("Algorithm breaking records");
 		
@@ -365,7 +366,7 @@ public class AlgorithmsMain {
 		int[] rec = {countMayorBreak,countMinorBreak};
 		System.out.println(rec[0]+" "+rec[1]);
 
-		//"Pairs sum divisible by 5"
+//"Pairs sum divisible by 5"
 		
 		System.out.println("Pairs sum divisible by 5");
 	
@@ -400,7 +401,7 @@ public class AlgorithmsMain {
 		
 		System.out.println(cont);
 		
-		//"Absolute Diagonals Difference in a Matrix"
+//"Absolute Diagonals Difference in a Matrix"
 		
 		System.out.println("Absolute Diagonals Difference in a Matrix");
 
@@ -422,7 +423,7 @@ public class AlgorithmsMain {
         arr.get(2).add(8);
         arr.get(2).add(-12);
 		
-        	int len = arr.get(1).size();
+        int len = arr.get(1).size();
         
         int sumFirstD = 0;
         int sumSecondD = 0;
@@ -435,12 +436,8 @@ public class AlgorithmsMain {
         } 
         System.out.println(Math.abs(sumFirstD-sumSecondD));
         
-        //Rounded grades
-        
-        System.out.println("----------------------------------------------------------------");
-        System.out.println("Rounded grades");
-      
-        
+//Rounded grades
+
         List<Integer> grades = new ArrayList<Integer>();
         List<Integer> finalGrades = new ArrayList<Integer>();
         
@@ -493,7 +490,7 @@ public class AlgorithmsMain {
         
         System.out.println(finalGrades);
         
-        //Weird Not Weird Algorithm
+//Weird Not Weird Algorithm
         
         int N = 8;
         
@@ -516,7 +513,7 @@ public class AlgorithmsMain {
 
         }
 
-        //print table of products
+//print table of products
         
         int o = 2;
         for (int j = 1; j <= 10; j++) {
